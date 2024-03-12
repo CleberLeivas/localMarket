@@ -62,3 +62,8 @@ button:hover{
     border-radius: 2px double rgb(243, 9, 122);
     box-shadow: rgb(164, 8, 248) 0px 54px 55px, rgba(246, 8, 186, 0.12) 0px -12px 30px;
 }
+
+error-modal{
+    display: flex;
+    flex-direction: column;
+}

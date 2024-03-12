@@ -12,6 +12,7 @@ function login(){
         window.location.href = "../Store";
         console.log("deu boa")
     }else{
+        document.getElementById("container").style.display = "none";
         document.getElementById("error-modal").style.display = "flex";
         document.getElementById("user").style.border = "2px solid red";
         document.getElementById("password").style.border = "2px solid red";
@@ -20,9 +21,9 @@ function login(){
 
 function closeError(){
     document.getElementById("error-modal").style.display = "nome";
+    document.getElementById("container").style.display = "flex";
+    document.getElementById("user").style.border = "2px solid red";
     document.getElementById("password").style.border = "2px solid red";
-    document.getElementById("password").style.border = "2px solid red";
-
 }
 
 function showPassword(){
