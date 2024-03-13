@@ -20,7 +20,7 @@ function login(){
 }
 
 function closeError(){
-    document.getElementById("error-modal").style.display = "nome";
+    document.getElementById("error-modal").style.display = "none";
     document.getElementById("container").style.display = "flex";
     document.getElementById("user").style.border = "2px solid red";
     document.getElementById("password").style.border = "2px solid red";

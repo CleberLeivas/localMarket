@@ -11,14 +11,14 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("https://static.vecteezy.com/system/resources/previews/008/814/637/non_2x/3d-render-of-flash-neon-and-light-glowing-on-dark-scene-speed-light-moving-lines-free-photo.jpg");
+    background-image: url("../image/fundo1.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .container{
-    background-color: rgb(183, 125, 48);
+    background-color: rgb(206, 123, 244);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,9 +47,19 @@ input{
     opacity: 1;
 }
 
-.error-div{
+.error-div {
     display: none;
-}
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    background: lightpink;
+    gap: 2vh;
+    padding: 10px;
+    position: absolute;
+    bottom: 5%;
+  }
 
 button{
     padding: 5px 15px;
