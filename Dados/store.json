@@ -1,20 +1,26 @@
 [
     {
         "id": 1,
-        "descricao": "Produto 1",
-        "imagem": "./image/perfume1",
-        "preco": 100.0
+        "descricao": "Papel Higiênico - pacu",
+        "imagem": "../image/produto1.webp",
+        "preco": 16.80
     },
     {
-        "id": 1,
-        "descricao": "Produto 1",
-        "imagem": "./image/perfume2",
-        "preco": 200.0
+        "id": 2,
+        "descricao": "Escova Sanitária",
+        "imagem": "../image/produto2.jpeg",
+        "preco": 12.99
     },
     {
         "id": 3,
-        "descricao": "Produto 3",
-        "imagem": "./image/perfume3",
-        "preco": 300.0
+        "descricao": "Pinho Sol - Original",
+        "imagem": "../image/produto3.jpg",
+        "preco": 30.99
+    },
+    {
+        "id": 4,
+        "descricao": "Luva de Limpeza",
+        "imagem": "../image/produto4.webp",
+        "preco": 24.99
     }
 ]

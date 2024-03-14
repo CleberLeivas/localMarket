@@ -19,30 +19,39 @@ document.addEventListener("DOMContentLoaded", function() {
         produtos.forEach((produto, index) => {
             const card = document.createElement("div");
             card.className = "card";
-            card.style.width = "18rem";
+            card.style.width = "20rem";
             card.style.marginRight = "10px";
-    
+            card.style.padding = "10px";
+
             const imagem = document.createElement("img");
             imagem.src = produto.imagem;
             imagem.className = "card-img-top";
-    
+            imagem.style.border = "4px solid rgb(250, 146, 10)";
+            imagem.style.borderRadius = "10px";
+
             const cardBody = document.createElement("div");
             cardBody.className = "card-body";
     
             const cardTitle = document.createElement("h5");
             cardTitle.className = "card-title";
             cardTitle.textContent = produto.descricao;
+            cardTitle.style.textAlign = "center"
     
             const cardText = document.createElement("p");
             cardText.className = "card-text";
-            cardText.textContent = "Preço: $" + produto.preco.toFixed(2);
-    
+            cardText.textContent = "Preço: R$" + produto.preco.toFixed(2);
+            cardText.style.textAlign = "center"
+
             const btnAdicionarAoCarrinho = document.createElement("a");
             btnAdicionarAoCarrinho.href = "#";
             btnAdicionarAoCarrinho.className =
               "btn btn-primary btn-adicionar-ao-carrinho";
             btnAdicionarAoCarrinho.textContent = "Adicionar ao Carrinho";
             btnAdicionarAoCarrinho.setAttribute("data-indice", index);
+            btnAdicionarAoCarrinho.style.display = "flex";
+            btnAdicionarAoCarrinho.style.alignItems = "center";
+            btnAdicionarAoCarrinho.style.justifyContent = "center";
+
 
             cardBody.appendChild(cardTitle);
             cardBody.appendChild(cardText);
@@ -56,16 +65,16 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     .catch((error) => console.error("Erro ao carregar o arquivo JSON", error));
 
-    $("#produtos-container").on(
-        "click",
-        ".btn-adicionar-ao-carrinho",
-        function () {
-          const indexDoProduto = $(this).data("indice");
-          const produtoSelecionado = produtos[indexDoProduto];
-          let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
-          carrinho.push(produtoSelecionado);
-          localStorage.setItem("carrinho", JSON.stringify(carrinho));
-          alert("Produto adicionado ao carrinho!");
-        }
-      );
+$("#produtos-container").on(
+    "click",
+    ".btn-adicionar-ao-carrinho",
+    function () {
+      const indexDoProduto = $(this).data("indice");
+      const produtoSelecionado = produtos[indexDoProduto];
+      let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+      carrinho.push(produtoSelecionado);
+      localStorage.setItem("carrinho", JSON.stringify(carrinho));
+      alert("Produto adicionado ao carrinho!");
+    }
+  );
 })

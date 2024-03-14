@@ -6,7 +6,6 @@
     <title>Store</title>
     <link rel="stylesheet" href="style.css">
 
-
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,18 +15,27 @@
 
 </head>
 <body>
-    <a href="../Carrinho/carrinho.html">Ir para carrinho</a>
+  <div class="topContainer">
+    <div>
+      <h1>Mercadinho do Zé</h1>
+    </div>
+    <div>
+      <a href="../Login/index.html">Sair</a>
+    </div>
     <div>
       <h5 id="perfil"></h5>
-      <div class="idPerfil">
-        Protocolo atual: <p id="idPerfil"></p>
-      </div>
     </div>
-    <h1>Loja</h1>
-    <p>Bem vindo <span id="user"></span> , vamos as compras!</p>
-    <br>
-    <h2>Produtos</h2>
-    <br>
+    <div class="idPerfil">
+      Protocolo atual: <p id="idPerfil"></p>
+    </div>
+    <div>
+      <a href="../Carrinho/carrinho.html"> 🛒 </a>
+    </div>
+  </div>
+  <div class="centerContainer">
+    <p>Bem Vindo <span id="user"></span> , vamos as compras!</p>
+  </div>
+    
     <div class="wrap">
       <div id="produtos-container" class="row center"></div>
     </div>

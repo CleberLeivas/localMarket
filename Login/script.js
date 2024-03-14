@@ -10,7 +10,6 @@ function login(){
         }
         localStorage.setItem("user", JSON.stringify(user))
         window.location.href = "../Store";
-        console.log("deu boa")
     }else{
         document.getElementById("container").style.display = "none";
         document.getElementById("error-modal").style.display = "flex";

@@ -1,6 +1,6 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     font-family: "Poppins", sans-serif;
 }
 
@@ -8,72 +8,87 @@ body{
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-image: url("../image/fundo1.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgba(5, 56, 80);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .container{
-    background-color: rgb(206, 123, 244);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1vh;
-    padding: 10px;
+    gap: 2vh;
+    padding: 2em;
     border-radius: 10px;
-    box-shadow: rgb(164, 8, 248) 0px 54px 55px, rgba(246, 8, 186, 0.12) 0px -12px 30px;
-    border: 2px solid rgb(227, 22, 91);
+    background-color: rgba(168, 245, 24, 0.6);
+    color: #ffff;
+    border: 4px double rgba(229, 245, 6, 0.781);
+    box-shadow: rgba(245, 169, 6, 0.781) 0px 5px 525px;
 }
 
 input{
     padding: 5px;
-    border: 2px solid rgb(227, 22, 91);
+    border: 2px solid rgba(238, 111, 7, 0.781);
     border-radius: 10px;
+    background-color: rgba(18, 29, 49, 0.9);
+    color: #ffff;
+    
 }
+
+input:focus {
+    box-shadow: rgb(225, 252, 75) 0px 5px 15px;
+  }
 
 .key{
     position: absolute;
-    top: 2px;
+    top: 5px;   
     right: 10px;
     opacity: 0.6;
 }
+
 .key:hover{
     cursor: pointer;
     opacity: 1;
 }
 
-.error-div {
-    display: none;
+.error-div{
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: auto;
-    height: auto;
-    background: lightpink;
     gap: 2vh;
-    padding: 10px;
-    position: absolute;
-    bottom: 5%;
-  }
+    padding: 2em;
+    border-radius: 10px;
+    background-color: rgba(168, 245, 24, 0.6);
+    color: #ffff;
+    border: 4px double rgba(229, 245, 6, 0.781);
+    box-shadow: rgba(245, 169, 6, 0.781) 0px 5px 525px;
+    display: none;
+}
+
 
 button{
     padding: 5px 15px;
-    border-radius: 2px double rgb(243, 9, 122);
-    border: none;
+    background-color: rgb(18, 27, 43);
+    border: 2px double #ffff;
+    border-radius: 10px;
+    opacity: 0.7;
+    border: 4px double rgba(189, 177, 187, 0.744);
 }
 
 button:hover{
-    padding: 5px 15px;
-    border-radius: 2px double rgb(243, 9, 122);
-    box-shadow: rgb(164, 8, 248) 0px 54px 55px, rgba(246, 8, 186, 0.12) 0px -12px 30px;
-}
-
-error-modal{
-    display: flex;
-    flex-direction: column;
+    opacity: 1;
+    border: 4px double rgba(195, 247, 6, 0.781);
+    box-shadow: rgba(172, 241, 9, 0.781) 0px 5px 25px;
+    color: #ffff;
+    cursor: pointer;
 }
